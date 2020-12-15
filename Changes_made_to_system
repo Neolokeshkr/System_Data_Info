@@ -1,0 +1,27 @@
+Changes made to resolve Dummy Output Problem:
+
+	1. File appended : etc/modprobe.d/alsa-base.conf
+	   Text appended : options snd-hda-intel dmic_detect=0
+	2. File appended : /etc/modprobe.d/blacklist.conf
+	   Text appended : blacklist snd_soc_sk
+	-------------------------------------------
+	Commands run:
+	1. sudo apt-add-repository ppa:ubuntu-audio-dev/alsa-daily
+	2. sudo apt-get install oem-audio-hda-daily-dkms
+	-----------------------------------------------
+	url : https://askubuntu.com/questions/1059619/sound-card-shown-as-dummy-output-in-ubuntu-18-04
+**********************************************************************
+Installing specific node versions:
+	wget http://nodejs.org/dist/v8.1.1/node-v8.1.1-linux-x64.tar.gz
+
+	sudo tar -C /usr/local --strip-components 1 -xzf node-v8.1.1-linux-x64.tar.gz
+
+	Location of installation:
+	1. ls -l /usr/local/bin/node
+	2. ls -l /usr/local/bin/npm
+
+	List of distros : http://nodejs.org/dist/
+
+	Url: https://stackoverflow.com/questions/33033538/installing-a-tar-gz-on-linux
+**********************************************************************Installing Specific Angular Versions:
+	npm install -g @angular/cli@7.3.9
